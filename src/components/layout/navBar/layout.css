@@ -1,0 +1,65 @@
+* {
+  margin: 0px;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f9cdd;
+  color: white;
+  height: 50px;
+}
+nav .profile_wraper {
+  display: flex;
+  align-items: center;
+}
+nav .icon {
+  margin-left: 5px;
+}
+.profileName {
+  padding: 5px;
+}
+.profile_down_arrow {
+  margin-right: 10px;
+}
+.profileImg {
+  border-radius: 15px;
+}
+.search_box {
+  margin-right: 650px;
+}
+.input_search {
+  border: none;
+  height: 27px;
+  border-radius: 7px;
+  text-align: center;
+}
+.mobile_icon {
+  display: none;
+}
+
+.sidebar_wraper {
+  margin: 0px;
+  height: 100%;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+@media (max-width: 1132px) {
+  .mobile_icon {
+    display: block;
+  }
+  .search_box {
+    position: fixed;
+    top: 80px;
+    display: none;
+  }
+  .profile_wraper {
+    position: fixed;
+    top: 120px;
+    display: none !important;
+    color: red;
+  }
+}
